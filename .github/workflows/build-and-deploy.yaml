@@ -1,0 +1,12 @@
+---
+name: Build and Deploy React App to CloudFront
+on: 
+  push: 
+    branches: [ master ]
+jobs:
+  build-and-deploy:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+    env: 
+      Bucket: www.techtonicity.io
+      DIST: build
