@@ -1,0 +1,226 @@
+[
+  {
+    "image": "../images/darth_vader_01.jpeg",
+    "tokenId": 1,
+    "name": "Bizzare Darth Vader",
+    "sellerFeeBasisPoints": 450,
+    "attributes": [
+      {
+        "traitType": "Face",
+        "value": "Pinkish Dark"
+      },
+      {
+        "traitType": "Hollow Vision Eyes",
+        "value": "regular"
+      },
+      {
+        "traitType": "Helmet",
+        "value": "Paint bloody red"
+      },
+      {
+        "traitType": "Tattoos",
+        "value": "yes"
+      },
+      {
+        "traitType": "Background",
+        "value": "Sunflower Halo Collage"
+      }
+    ]
+  },
+  {
+    "image": "../images/darth_vader_02.jpeg",
+    "tokenId": 2,
+    "name": "Bloody Sunflower Darth Vader",
+    "sellerFeeBasisPoints": 430,
+    "attributes": [
+      {
+        "traitType": "Face",
+        "value": "Redish Dark"
+      },
+      {
+        "traitType": "Hollow Vision Eyes",
+        "value": "regular"
+      },
+      {
+        "traitType": "Helmet",
+        "value": "Paint bloody red"
+      },
+      {
+        "traitType": "Tattoos",
+        "value": "yes"
+      },
+      {
+        "traitType": "Background",
+        "value": "Dark Sunflower Halo Collage"
+      }
+    ]
+  },
+  {
+    "image": "../images/darth_vader_03.jpeg",
+    "tokenId": 3,
+    "name": "Shiny Darth Vader",
+    "sellerFeeBasisPoints": 480,
+    "attributes": [
+      {
+        "traitType": "Face",
+        "value": "Half Evil | Half Good"
+      },
+      {
+        "traitType": "Hollow Vision Eyes",
+        "value": "regular"
+      },
+      {
+        "traitType": "Helmet",
+        "value": "Light TrailBlazer"
+      },
+      {
+        "traitType": "Tattoos",
+        "value": "No"
+      },
+      {
+        "traitType": "Background",
+        "value": "Black Mystery"
+      }
+    ]
+  },
+  {
+    "image": "../images/darth_vader_05.jpeg",
+    "tokenId": 4,
+    "name": "Pistel Darth Vader",
+    "sellerFeeBasisPoints": 500,
+    "attributes": [
+      {
+        "traitType": "Face",
+        "value": "Dry Dark Mirage"
+      },
+      {
+        "traitType": "Torture Vision Eyes",
+        "value": "Dangerous"
+      },
+      {
+        "traitType": "Helmet",
+        "value": "Paint bloody red"
+      },
+      {
+        "traitType": "Tattoos",
+        "value": "yes"
+      },
+      {
+        "traitType": "Background",
+        "value": "Splash Color Strips"
+      }
+    ]
+  },
+  {
+    "image": "../images/darth_vader_06.jpeg",
+    "tokenId": 5,
+    "name": "Darth Vader Skull Shell",
+    "sellerFeeBasisPoints": 450,
+    "attributes": [
+      {
+        "traitType": "Face",
+        "value": "Pinkish Dark"
+      },
+      {
+        "traitType": "Hollow Vision Eyes",
+        "value": "regular"
+      },
+      {
+        "traitType": "Hair",
+        "value": "Paint bloody red"
+      },
+      {
+        "traitType": "Tattoos",
+        "value": "yes"
+      },
+      {
+        "traitType": "Background",
+        "value": "Mystery Black"
+      }
+    ]
+  },
+  {
+    "image": "../images/darth_vader_07.jpeg",
+    "tokenId": 6,
+    "name": "Darth Vader Glow",
+    "sellerFeeBasisPoints": 450,
+    "attributes": [
+      {
+        "traitType": "Face",
+        "value": "Pinkish Glow Dark Shadow"
+      },
+      {
+        "traitType": "Hollow Vision Eyes",
+        "value": "regular"
+      },
+      {
+        "traitType": "Hair",
+        "value": "Paint bloody red"
+      },
+      {
+        "traitType": "Tattoos",
+        "value": "yes"
+      },
+      {
+        "traitType": "Background",
+        "value": "Sunflower Halo Collage"
+      }
+    ]
+  },
+  {
+    "image": "../images/darth_vader_09.jpeg",
+    "tokenId": 7,
+    "name": "Darth Vader ",
+    "sellerFeeBasisPoints": 430,
+    "attributes": [
+      {
+        "traitType": "Face",
+        "value": "Pinkish Dark"
+      },
+      {
+        "traitType": "Hollow Vision Eyes",
+        "value": "regular"
+      },
+      {
+        "traitType": "Hair",
+        "value": "Paint bloody red"
+      },
+      {
+        "traitType": "Tattoos",
+        "value": "yes"
+      },
+      {
+        "traitType": "Background",
+        "value": "Sunflower Halo Collage"
+      }
+    ]
+  },
+  {
+    "image": "../images/star_wars_fighter_3.jpeg",
+    "tokenId": 8,
+    "name": "Bored Ape Yacht Club",
+    "sellerFeeBasisPoints": 530,
+    "attributes": [
+      {
+        "traitType": "Face",
+        "value": "Mustache w/ Toothpick"
+      },
+      {
+        "traitType": "Eyes",
+        "value": "regular"
+      },
+      {
+        "traitType": "Hair",
+        "value": "bloody red"
+      },
+      {
+        "traitType": "Tattoos",
+        "value": "yes"
+      },
+      {
+        "traitType": "Background",
+        "value": "Purple Collage"
+      }
+    ]
+  }
+]
