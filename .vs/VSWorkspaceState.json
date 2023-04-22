@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\Backdrop"
+    "\\src\\features\\counter",
+    "\\src\\Nav\\Header",
+    "\\src\\RegistrationForm"
   ],
-  "SelectedNode": "\\src\\App.jsx",
+  "SelectedNode": "\\.gitignore",
   "PreviewInSolutionExplorer": false
 }
