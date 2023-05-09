@@ -3,7 +3,9 @@
     "image": "../images/darth_vader_01.jpeg",
     "tokenId": 1,
     "name": "Bizzare Darth Vader",
-    "sellerFeeBasisPoints": 450,
+    "seller_fee_basis_points": 0,
+    "symbol": "solana",
+    "description": "Bizare Darth Vader Killer Eye Vision",
     "attributes": [
       {
         "traitType": "Face",
@@ -25,13 +27,29 @@
         "traitType": "Background",
         "value": "Sunflower Halo Collage"
       }
-    ]
+    ],
+    "properties": {
+      "creators": [
+        {
+          "address": "9Dp3M1L7qhxsTxrX9eTWuwp6mqFtXzSQVQMZDE2nLCm9",
+          "share": 100
+        }
+      ],
+      "files": [
+        {
+          "uri": "darth_vader_01.jpeg",
+          "type": "image/jpeg"
+        }
+      ]
+    }
   },
   {
     "image": "../images/darth_vader_02.jpeg",
     "tokenId": 2,
     "name": "Bloody Sunflower Darth Vader",
-    "sellerFeeBasisPoints": 430,
+    "seller_fee_basis_points": 0,
+    "symbol": "solana",
+    "description": "Bizare Darth Vader Redish Eye Vision",
     "attributes": [
       {
         "traitType": "Face",
@@ -53,13 +71,29 @@
         "traitType": "Background",
         "value": "Dark Sunflower Halo Collage"
       }
-    ]
+    ],
+    "properties": {
+      "creators": [
+        {
+          "address": "9Dp3M1L7qhxsTxrX9eTWuwp6mqFtXzSQVQMZDE2nLCm9",
+          "share": 100
+        }
+      ],
+      "files": [
+        {
+          "uri": "darth_vader_02.jpeg",
+          "type": "image/jpeg"
+        }
+      ]
+    }
   },
   {
     "image": "../images/darth_vader_03.jpeg",
     "tokenId": 3,
     "name": "Shiny Darth Vader",
-    "sellerFeeBasisPoints": 480,
+    "seller_fee_basis_points": 0,
+    "symbol": "solana",
+    "description": "Shiny Half Evil | Half Good Darth Vader TrailBlazer Eye Vision",
     "attributes": [
       {
         "traitType": "Face",
@@ -81,13 +115,29 @@
         "traitType": "Background",
         "value": "Black Mystery"
       }
-    ]
+    ],
+    "properties": {
+      "creators": [
+        {
+          "address": "9Dp3M1L7qhxsTxrX9eTWuwp6mqFtXzSQVQMZDE2nLCm9",
+          "share": 100
+        }
+      ],
+      "files": [
+        {
+          "uri": "darth_vader_03.jpeg",
+          "type": "image/jpeg"
+        }
+      ]
+    }
   },
   {
     "image": "../images/darth_vader_05.jpeg",
     "tokenId": 4,
     "name": "Pistel Darth Vader",
-    "sellerFeeBasisPoints": 500,
+    "seller_fee_basis_points": 0,
+    "symbol": "solana",
+    "description": "Bizare Darth Vader Killer Eye Vision",
     "attributes": [
       {
         "traitType": "Face",
@@ -109,13 +159,29 @@
         "traitType": "Background",
         "value": "Splash Color Strips"
       }
-    ]
+    ],
+    "properties": {
+      "creators": [
+        {
+          "address": "9Dp3M1L7qhxsTxrX9eTWuwp6mqFtXzSQVQMZDE2nLCm9",
+          "share": 100
+        }
+      ],
+      "files": [
+        {
+          "uri": "darth_vader_05.jpeg",
+          "type": "image/jpeg"
+        }
+      ]
+    }
   },
   {
     "image": "../images/darth_vader_06.jpeg",
     "tokenId": 5,
     "name": "Darth Vader Skull Shell",
-    "sellerFeeBasisPoints": 450,
+    "seller_fee_basis_points": 0,
+    "symbol": "solana",
+    "description": "Bizare Darth Vader Skull Shell Vision",
     "attributes": [
       {
         "traitType": "Face",
@@ -137,13 +203,29 @@
         "traitType": "Background",
         "value": "Mystery Black"
       }
-    ]
+    ],
+    "properties": {
+      "creators": [
+        {
+          "address": "9Dp3M1L7qhxsTxrX9eTWuwp6mqFtXzSQVQMZDE2nLCm9",
+          "share": 100
+        }
+      ],
+      "files": [
+        {
+          "uri": "darth_vader_06.jpeg",
+          "type": "image/jpeg"
+        }
+      ]
+    }
   },
   {
     "image": "../images/darth_vader_07.jpeg",
     "tokenId": 6,
     "name": "Darth Vader Glow",
-    "sellerFeeBasisPoints": 450,
+    "seller_fee_basis_points": 0,
+    "symbol": "solana",
+    "description": "Bizare Darth Vader Pinkish Glow Shadow Vision",
     "attributes": [
       {
         "traitType": "Face",
@@ -165,13 +247,29 @@
         "traitType": "Background",
         "value": "Sunflower Halo Collage"
       }
-    ]
+    ],
+    "properties": {
+      "creators": [
+        {
+          "address": "9Dp3M1L7qhxsTxrX9eTWuwp6mqFtXzSQVQMZDE2nLCm9",
+          "share": 100
+        }
+      ],
+      "files": [
+        {
+          "uri": "darth_vader_07.jpeg",
+          "type": "image/jpeg"
+        }
+      ]
+    }
   },
   {
     "image": "../images/darth_vader_09.jpeg",
     "tokenId": 7,
-    "name": "Darth Vader ",
-    "sellerFeeBasisPoints": 430,
+    "name": "Darth Vader 09",
+    "seller_fee_basis_points": 0,
+    "symbol": "solana",
+    "description": "Bizare Darth Vader Killer Hollow Vision",
     "attributes": [
       {
         "traitType": "Face",
@@ -193,17 +291,33 @@
         "traitType": "Background",
         "value": "Sunflower Halo Collage"
       }
-    ]
+    ],
+    "properties": {
+      "creators": [
+        {
+          "address": "9Dp3M1L7qhxsTxrX9eTWuwp6mqFtXzSQVQMZDE2nLCm9",
+          "share": 100
+        }
+      ],
+      "files": [
+        {
+          "uri": "darth_vader_09.jpeg",
+          "type": "image/jpeg"
+        }
+      ]
+    }
   },
   {
-    "image": "../images/star_wars_fighter_3.jpeg",
     "tokenId": 8,
-    "name": "Bored Ape Yacht Club",
-    "sellerFeeBasisPoints": 530,
+    "name": "Star Wars Fighter 3",
+    "seller_fee_basis_points": 0,
+    "image": "../images/star_wars_fighter_3.jpeg",
+    "symbol": "solana",
+    "description": "Star Wars Fighter in Flight",
     "attributes": [
       {
         "traitType": "Face",
-        "value": "Mustache w/ Toothpick"
+        "value": "Dark Mask"
       },
       {
         "traitType": "Eyes",
@@ -221,6 +335,20 @@
         "traitType": "Background",
         "value": "Purple Collage"
       }
-    ]
+    ],
+    "properties": {
+      "creators": [
+        {
+          "address": "9Dp3M1L7qhxsTxrX9eTWuwp6mqFtXzSQVQMZDE2nLCm9",
+          "share": 100
+        }
+      ],
+      "files": [
+        {
+          "uri": "star_wars_fighter_3.jpeg",
+          "type": "image/jpeg"
+        }
+      ]
+    }
   }
 ]

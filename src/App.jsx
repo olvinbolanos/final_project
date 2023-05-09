@@ -11,7 +11,8 @@ const mx = Metaplex.make(connection);
 
 function App() {
   const [address, setAddress] = useState(
-    '3ijFZcJKmp1EnDbbuaumWYvEFbztx9NRupwTXTchK9bP',
+    '0xd0ff87cc052b35241d11127b8687d727b7444d3e',
+    {/* '3ijFZcJKmp1EnDbbuaumWYvEFbztx9NRupwTXTchK9bP', */}
   );
   const [nft, setNft] = useState(null);
 
@@ -19,6 +20,8 @@ function App() {
     const asset = await mx.nfts().findByMint({ mintAddress: new PublicKey(address) });
     setNft(asset);
   };
+
+  
 
   return (
     <div>

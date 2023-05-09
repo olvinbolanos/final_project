@@ -25,5 +25,9 @@ yarn-error.log*
 # .vs 
 .vs
 vs
-/vs
+/.vs
+
+#.env
+.env
+.env.test
 

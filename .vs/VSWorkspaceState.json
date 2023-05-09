@@ -2,10 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\features\\counter",
+    "\\src\\Header",
+    "\\src\\Nav",
     "\\src\\Nav\\Header",
-    "\\src\\RegistrationForm"
+    "\\src\\Nav\\Mint",
+    "\\src\\routes",
+    "\\src\\UploadNFT"
   ],
-  "SelectedNode": "\\.gitignore",
+  "SelectedNode": "\\src\\UploadNFT\\UploadNFT.js",
   "PreviewInSolutionExplorer": false
 }
