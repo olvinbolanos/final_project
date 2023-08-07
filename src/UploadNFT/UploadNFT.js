@@ -6,7 +6,7 @@ export default function UploadNFT() {
 
   const getImage = async (info) => {
     try {
-      const registerResponse = await fetch('http://localhost:8000/api/v1/upload', {
+      const registerResponse = await fetch('', {
         method: 'POST',
         credentials: 'include',
         body: info,
@@ -65,9 +65,10 @@ export default function UploadNFT() {
     <div>
       <h1>File Upload Test</h1>
 
-      <form action="/api/v1/upload" method="post" encType="multipart/form-data" onSubmit={handleSubmit}>
-        <input type="file" name="image" accept="image/*" onChange={handleChange} />
-        <button>Submit</button>
+      <form action="/posts" method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*"/>
+        <input type="text" name="caption" placeholder="Caption"/>
+        <button type="submit">Submit</button>
       </form>
     </div>
   )

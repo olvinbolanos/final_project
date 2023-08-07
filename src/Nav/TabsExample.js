@@ -6,7 +6,7 @@ export function TabsExample( ) {
   return (
     <Nav variant="tabs" defaultActiveKey="/home">
       <Nav.Item>
-        <Nav.Link href="/">Active</Nav.Link>
+        <Nav.Link href="/">Home</Nav.Link>
       </Nav.Item>
       <Nav.Item>
         <Nav.Link href="/mint">Mint NFT</Nav.Link>

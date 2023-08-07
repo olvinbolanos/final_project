@@ -18,15 +18,18 @@ var db;
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, 'uploads')
+    cb(null, '/tmp/uploads')
   },
   filename: (req, file, cb) => {
+    const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9);
     const { originalname } = file;
     // or 
     // uuid, or fieldname
-    cb(null, originalname);
+    cb(null, file.fieldname + uniqueSuffix);
   }
-})
+})  
+
+const upload = multer({ storage: storage })
 
 
 const uri = 'mongodb://127.0.0.1:27017'; // Create a new MongoClient
@@ -63,19 +66,19 @@ aws.config.update({
 */
 // AWS Credentials
 const s3 = new aws.S3({
-  apiVersion: '2006-03-01',
+  apiVersion: '2012-10-17',
   secretAccessKey: process.env.AWS_SECRET_ACESS_KEY,
   accessKeyId: process.env.AWS_ACCESS_KEY_ID,
   region: 'us-west-1'
 });
 // Needs AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
 
-
+/*
 const upload = multer({
   storage: multerS3({
     s3,
     acl: 'public-read',
-    bucket: 'nft-bucket-pile',
+    bucket: process.env.AWS_BUCKET_NAME,
     metadata: (req, file, cb) => {
       cb(null, { fieldName: file.fieldname });
     },
@@ -86,6 +89,7 @@ const upload = multer({
     }
   })
 });
+*/
 
 const outdirectory = 'public';
 
@@ -108,7 +112,7 @@ app.post('/api/v1/upload', upload.single('image'), async (req, res) => {
 
 
 //use by upload form
-/*
+
 app.post('/upload', upload.array('upl', 25), function (req, res, next) {
   res.send({
     message: "Uploaded!",
@@ -117,7 +121,7 @@ app.post('/upload', upload.array('upl', 25), function (req, res, next) {
     })
   });
 });
-*/
+
 
 app.get('/images', (req, res) => {
   const imageCollection = req.app.locals.imageCollection;
