@@ -1,4 +1,9 @@
 import React, { useState } from 'react';
+import {
+  BrowserRouter,
+  Routes, 
+  Route
+} from "react-router-dom";
 import { createRoot } from 'react-dom/client';
 import App from './App';
 import Expense from "./routes/expenses";
@@ -6,16 +11,10 @@ import Invoices from "./routes/invoices";
 import Mint from "./Mint/Mint"
 import RegistrationForm from "./RegistrationForm/RegistrationForm";
 import { TabsExample } from './Nav/TabsExample';
-
-import {
-  BrowserRouter,
-  Routes,
-  Route
-} from "react-router-dom";
-let hashHistory = Routes.hashHistory;
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
-import UploadNFT from './UploadNFT/UploadNFT';
+import  UploadNFT from './UploadNFT/UploadNFT';
+let hashHistory = Routes.hashHistory;
 
 
 const root = createRoot(document.getElementById('root'));

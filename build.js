@@ -9,30 +9,27 @@ const multer = require('multer');
 const aws = require('aws-sdk');
 const express = require('express');
 const bodyParser = require('body-parser')
-const multerS3 = require('multer-s3');
+//const multerS3 = require('multer-s3');
 const uuid = require('uuid').v4;
 const { MongoClient } = require('mongodb');
 const app = express();
 require('dotenv').config();
 var db;
-
-const storage = multer.diskStorage({
+/*
+const storage = multer({
   destination: (req, file, cb) => {
-    cb(null, '/tmp/uploads')
+    cb(null, 'uploads/')
   },
   filename: (req, file, cb) => {
     const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9);
-    const { originalname } = file;
     // or 
     // uuid, or fieldname
     cb(null, file.fieldname + uniqueSuffix);
   }
 })  
+*/
 
-const upload = multer({ storage: storage })
-
-
-const uri = 'mongodb://127.0.0.1:27017'; // Create a new MongoClient
+const uri = process.env.MONGODB_URI; // Create a new MongoClient
 const client = new MongoClient(uri);
 
 async function run() {
@@ -44,10 +41,13 @@ async function run() {
     app.locals.imageCollection = client.db('myAppDB').collection('images');
     console.log('Connected successfully to server');
     */
-    await MongoClient.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
+    await MongoClient.connect(uri, { 
+      useNewUrlParser: true, 
+      useUnifiedTopology: true
+     })
       .then(client => {
         console.log('Mongo Connected!');
-        const db = client.db('myApp');
+        const db = client.db(process.env.MONGODB_BUCKET_NAME);
         const collection = db.collection('images');
         app.locals.imageCollection = collection;
       })
@@ -57,13 +57,7 @@ async function run() {
   }
 }
 
-/*
-aws.config.update({
-  secretAccessKey: process.env.AWS_SECRET_ACESS_KEY,
-  accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-  region: 'us-west-1'
-});
-*/
+
 // AWS Credentials
 const s3 = new aws.S3({
   apiVersion: '2012-10-17',
@@ -96,23 +90,26 @@ const outdirectory = 'public';
 app.use(express.static('public'))
 app.use(bodyParser.json()); 
 
+const upload = multer({ dest: "uploads/"});
 
-
-app.post('/api/v1/upload', upload.single('image'), async (req, res) => {
+app.post('/upload', upload.single('image'), async (req, res) => {
+  /*
   const imageCollection = await req.app.locals.imageCollection;
   const uploadedFile = await req.file.location;
-  console.log(req.file);
-
+  */
+  res.json({ status: "success"});  
+  /*
   imageCollection.insert({ filePath: uploadedFile })
     .then(result => {
       return res.json({ status: 'OK', ...result });
     })
+  */
   console.log("file uploaded successfully")
 });
 
 
 //use by upload form
-
+/*
 app.post('/upload', upload.array('upl', 25), function (req, res, next) {
   res.send({
     message: "Uploaded!",
@@ -121,7 +118,7 @@ app.post('/upload', upload.array('upl', 25), function (req, res, next) {
     })
   });
 });
-
+*/
 
 app.get('/images', (req, res) => {
   const imageCollection = req.app.locals.imageCollection;
