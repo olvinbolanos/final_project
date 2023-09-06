@@ -1,3 +1,4 @@
+/*
 const express = require("express");
 const cors = require("cors");
 const expressfileupload = require("express-fileupload");
@@ -15,3 +16,4 @@ app.get("/", (req, res) =>
 app.use("/api/users", userRouter);
 
 module.exports = app;
+*/

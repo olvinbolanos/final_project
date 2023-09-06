@@ -1,19 +1,19 @@
-const esbuild = require('esbuild');
-const plugin = require('node-stdlib-browser/helpers/esbuild/plugin');
-const stdLibBrowser = require('node-stdlib-browser');
-const fs = require('fs');
-const path = require('path');
-const servor = require('servor');
-const multer = require('multer');
+import esbuild from 'esbuild';
+import plugin  from 'node-stdlib-browser/helpers/esbuild/plugin';
+import stdLibBrowser  from 'node-stdlib-browser';
+import fs  from 'fs';
+import path from 'path';
+import servor from 'servor';
+import multer  from 'multer';
 // File Upload
-const aws = require('aws-sdk');
-const express = require('express');
-const bodyParser = require('body-parser')
-//const multerS3 = require('multer-s3');
-const uuid = require('uuid').v4;
-const { MongoClient } = require('mongodb');
+import aws from 'aws-sdk';
+import express from 'express';
+import bodyParser from 'body-parser'
+//import multerS3  from 'multer-s3';
+//import uuid from ('uuid').v4;
+import { MongoClient } from 'mongodb';
 const app = express();
-require('dotenv').config();
+import 'dotenv/config';
 var db;
 /*
 const storage = multer({
@@ -32,15 +32,16 @@ const storage = multer({
 const uri = process.env.MONGODB_URI; // Create a new MongoClient
 const client = new MongoClient(uri);
 
+/*
 async function run() {
   try {
     // Connect the client to the server (optional starting in v4.7)
-    /*
+    
     await client.connect(); // Establish and verify connection
     await client.db('myAppDB').collection('images');
     app.locals.imageCollection = client.db('myAppDB').collection('images');
     console.log('Connected successfully to server');
-    */
+    
     await MongoClient.connect(uri, { 
       useNewUrlParser: true, 
       useUnifiedTopology: true
@@ -56,7 +57,7 @@ async function run() {
     await client.close();
   }
 }
-
+*/
 
 // AWS Credentials
 const s3 = new aws.S3({
@@ -87,12 +88,17 @@ const upload = multer({
 
 const outdirectory = 'public';
 
-app.use(express.static('public'))
+app.use(express.static('public'));
+app.use(express.static('js'));
 app.use(bodyParser.json()); 
+
+app.get('/', function(req, res) {
+  res.sendFile(__dirname + '/public/index.html');
+});
 
 const upload = multer({ dest: "uploads/"});
 
-app.post('/upload', upload.single('image'), async (req, res) => {
+app.post('/upload', upload.single('image'), (req, res) => {
   /*
   const imageCollection = await req.app.locals.imageCollection;
   const uploadedFile = await req.file.location;
@@ -108,6 +114,7 @@ app.post('/upload', upload.single('image'), async (req, res) => {
 });
 
 
+
 //use by upload form
 /*
 app.post('/upload', upload.array('upl', 25), function (req, res, next) {
@@ -119,7 +126,7 @@ app.post('/upload', upload.array('upl', 25), function (req, res, next) {
   });
 });
 */
-
+/*
 app.get('/images', (req, res) => {
   const imageCollection = req.app.locals.imageCollection;
   imageCollection.find({})
@@ -129,10 +136,11 @@ app.get('/images', (req, res) => {
       res.json(paths);
     });
 }); 
-
+*/
 
 
 //clear out any old JS or CSS
+/*
 fs.readdir(outdirectory, (err, files) => {
   if (err) throw err;
   for (const file of files) {
@@ -147,7 +155,8 @@ fs.readdir(outdirectory, (err, files) => {
     }
   }
 });
-
+*/
+/*
 async function dev() {
   console.log('Building development bundle ⏳');
   await esbuild.build({
@@ -177,7 +186,10 @@ async function dev() {
     port: 8000,
   });
 }
+*/
+app.listen(8000, () => console.log("App now running on localhost:8000"));
 
+/*
 async function prod() {
   console.log('Build started ⏳');
   await esbuild.build({
@@ -199,16 +211,17 @@ async function prod() {
   });
   console.log('Build completed ✅');
 }
-
+*/
 //defaults to build
+/*
 let config = '-build';
 if (process.argv.length > 2) {
   config = process.argv[2];
 }
-
+*/
 // Builds the bundle for dvelopment and runs a local web server 
 // with livereload when -watch is set
-config === '-watch' && dev();
+//config === '-watch' && dev();
 
 // Builds optimized bundle for production
-config === '-build' && prod();
+//config === '-build' && prod();

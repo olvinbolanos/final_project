@@ -19,6 +19,7 @@ let hashHistory = Routes.hashHistory;
 
 const root = createRoot(document.getElementById('root'));
 root.render(
+  /*
   <React.StrictMode>
     <BrowserRouter>
       <TabsExample />
@@ -29,8 +30,9 @@ root.render(
         <Route path="mint" element={<Mint />}></Route>
         <Route path="register" element={<RegistrationForm />}></Route>
         <Route path="s3-bucket" element={<UploadNFT  />}></Route>
-   
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
+  */
+  <TabsExample />
 );
